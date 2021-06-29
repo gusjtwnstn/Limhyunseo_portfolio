@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+@media all and (max-width: 375px) {
+    .otherList_all_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .otherList {
+        width: 900%;
+        position: relative;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .otherList>li {
+        position: relative;
+        width: 11.1%;
+    }
+
+    .otherList>li>img {
+        width: 100%;
+        position: relative;
+    }
+
+    .otherList span {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../otherlist_img/play_icon.png) no-repeat center center /50px 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+
+    .otherList li:hover span {
+        opacity: 1;
+    }
+
+    .otherList_btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .otherList_btn span {
+        display: inline-block;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .otherList_btn span.on {
+        background-color: rgb(59, 93, 136);
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width:1024px) {
+    .otherList_all_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .otherList {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .otherList>li {
+        position: relative;
+        width: 100;
+        border: 3px solid red;
+    }
+
+    .otherList>li>img {
+        width: 170%;
+        position: relative;
+    }
+
+    .otherList span {
+        width: 170%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../otherlist_img/play_icon.png) no-repeat center center /50px 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+
+    .otherList li:hover span {
+        opacity: 1;
+    }
+
+    .otherList_btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .otherList_btn span {
+        display: inline-block;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .otherList_btn span.on {
+        background-color: rgb(59, 93, 136);
+    }
+
+}

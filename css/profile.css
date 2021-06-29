@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(font.css);
+@import url(reset.css);
+@import url(bg2.css);
+
+@media all and (min-width: 834px) and (max-width:1024px) {
+   #section5-2 {
+
+      padding: 40px;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      z-index: 10000;
+      background: linear-gradient(-45deg, rgba(132, 165, 209, 1), #ffb6d2, #69abc4, rgba(158, 149, 195, 1));
+      box-sizing: border-box;
+   }
+
+   #section5-2 .more_profile {
+      position: relative;
+      top: 0;
+   }
+
+   #section5-2 .more_profile .close2 {
+      box-sizing: border-box;
+      position: absolute;
+      left: -10px;
+      font-size: 30px;
+      color: #ffffcb;
+      line-height: 40px;
+      padding-left: 50px;
+      background: url(../img/window-close-regular.svg) no-repeat center center /30px 30px;
+      width: 40px;
+      height: 40px;
+      font-family: 'neodgm-pro';
+   }
+
+   #section5-2 .more_profile .close:hover {
+      color: rgba(132, 165, 209, 1);
+   }
+
+   #section5-2 .profile {
+      height: 11vh;
+      width: 100%;
+      box-sizing: border-box;
+      float: left;
+      margin-bottom: 60px;
+      margin-top: 60px;
+   }
+
+   #section5-2 .profile_left {
+      padding-left: 5%;
+      width: 60%;
+      float: left;
+   }
+
+   #section5-2 .profile_left li {
+      Font-size: 17px;
+      padding-left: 25px;
+      line-height: 28px;
+      position: relative;
+      color: #fff;
+   }
+
+   #section5-2 .profile_left li:before {
+      position: absolute;
+      left: 0px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      content: '';
+      display: block;
+      background: url(../img/footer_email.svg) no-repeat 0 center / 15px 15px;
+      color: #fff;
+      animation: profile_icon 0.7s linear infinite;
+      transform: rotate(0deg);
+   }
+
+   @keyframes profile_icon {
+      0% {
+         transform: rotate(0deg);
+      }
+
+      30% {
+         transform: rotate(20deg);
+      }
+
+      50% {
+         transform: rotate(0deg);
+      }
+
+      70% {
+         transform: rotate(-20deg);
+      }
+
+      100% {
+         transform: rotate(0deg);
+      }
+   }
+
+
+   #section5-2 .profile_left li.year:before {
+      background: url(../img/birthday-cake-solid.svg) no-repeat 0 center/15px 15px;
+   }
+
+   #section5-2 .profile_left li.name:before {
+      Font-size: 17px;
+      padding-left: 25px;
+      line-height: 28px;
+      background: url(../img/favicon.svg) no-repeat 0 center/15px 15px;
+      color: #fff;
+   }
+
+   #section5-2 .profile_left li.phone:before {
+      Font-size: 17px;
+      padding-left: 25px;
+      line-height: 28px;
+      background: url(../img/footer_call.svg) no-repeat 0 center/15px 15px;
+      color: #fff;
+   }
+
+   #section5-2 .profile .big {
+
+      box-sizing: border-box;
+      display: block;
+      border-right: 2px dotted #fff;
+      height: 11vh;
+      padding-right: 5%;
+      width: 30%;
+      color: #fff;
+      box-sizing: border-box;
+      font-size: 40px;
+      float: left;
+      position: relative;
+      font-family: 'neodgm-pro';
+   }
+
+   #section5-2 .profile .big::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 0%;
+      height: 1px;
+      background-color: #fff;
+      bottom: 30px;
+      animation: profile_name 0.8s linear infinite;
+      animation: profile_icon 0.7s linear infinite;
+      transform: rotate(0deg);
+   }
+
+   @keyframes profile_name {
+      0% {
+         width: 0%;
+      }
+
+      100% {
+         width: 60%;
+      }
+   }
+
+   #section5-2 .profile_down {
+      width: 100%;
+      margin-top: 20vh;
+      position: relative;
+      height: 68vh;
+   }
+
+   #section5-2 .profile_down dl {
+      height: 29%;
+      width: 100%;
+      margin-bottom: 2%;
+      border: 1px dotted #fff;
+      box-sizing: border-box;
+      padding: 2%;
+   }
+
+   #section5-2 .profile_down dl:last-child {
+      margin-bottom: 0%;
+      height: 40%;
+   }
+
+   #section5-2 .profile_down dl dt {
+      width: 100%;
+      font-size: 15px;
+      color: #fff;
+      height: 15px;
+      margin-bottom: 20px;
+      position: relative;
+   }
+
+
+
+
+
+   #section5-2 .profile_down dl dd {
+      line-height: 25px;
+      font-size: 13px;
+      color: #fff;
+      height: 8%;
+   }
+
+   #section5-2 .profile_down dl div {
+      float: left;
+      width: 35%;
+   }
+
+   #section5-2 .profile_down dl div:last-child {
+      float: left;
+      width: 30%;
+   }
+
+   #section5-2 .profile_down dl.profile_third {
+      width: 100%;
+      position: relative;
+   }
+
+   #section5-2 .profile_down dl.profile_third>div {
+      width: 35%;
+   }
+
+   #section5-2 .profile_down dl.profile_third>div:last-child {
+      width: 30%;
+   }
+
+}

@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+body{ background: linear-gradient(-45deg, rgba(132,165,209,1), #ffb6d2, #69abc4, rgba(158,149,195,1)); background-size: 400% 400%; animation: gradient 15s ease infinite;}
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+#wrapper{width:100vw; height:100%; margin:0 auto; position:relative; overflow: hidden;}
+.bg_wrap{width:100%; height:100%; overflow: hidden; position:absolute; top:0;  box-sizing: border-box; position:fixed; }  
+.star1{position: absolute; left: 0; top:0;  width: 100%; height:100%;  animation: rotate 600s infinite linear; }
+    @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+    }
+
+ /*bg*/
+
+ .bling_Star/*별*/ {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: bling_Star;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+    @keyframes escurecer {
+        0%   { top: 0; }
+        100% { top: 100%; }
+    }
+
+    @keyframes bling_Star {
+        0% {
+            box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+        }
+        50% {
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+        }
+    }
+
+
+.bling_Star.style1 { animation-duration: 0.5s; animation-name: bling_Star; }
+.bling_Star.style2 { animation-duration: 1s; animation-name: bling_Star; }
+.bling_Star.style3 { animation-duration: 1.5s; animation-name: bling_Star; }
+.bling_Star.style4 { animation-duration: 2s; animation-name: bling_Star_after; }
+
+.bling_Star.tam1 { width: 3px; height: 3px; }
+.bling_Star.tam2 { width: 5px; height: 5px; }
+.bling_Star.tam3 { width: 2px; height: 2px; }
+
+.bling_Star.opacity1 { opacity:  1; }
+.bling_Star.opacity2 { opacity: .5; }
+.bling_Star.opacity3 { opacity: .1; }
+
+@keyframes bling_Star_after {
+    0% {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+    }
+    20% {
+        background-color: #FFC4C4;
+        box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+    }
+    80% {
+        background-color: #C4CFFF;
+        box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+    }
+    100% {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+    }
+}
+.meteoro /*날라오는별*/{
+position: absolute;
+background-color: #fff;
+width: 4px;
+height: 4px;
+border-radius: 50%;
+transform: rotate(-35deg);
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+}
+
+.meteoro:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+margin-right: 10px;
+width: 0;
+height: 0;
+border-top: 2px solid transparent;
+border-bottom: 2px solid transparent;
+border-left: 140px solid white;
+position: absolute;
+left: 2px;
+top: 0;
+}
+
+.meteoro.style1 { animation-name: meteoroStyle1; }
+.meteoro.style2 { animation-name: meteoroStyle2; }
+.meteoro.style3 { animation-name: meteoroStyle3; }
+.meteoro.style4 { animation-name: meteoroStyle3; }
+.meteoro.style5 { animation-name: meteoroStyle3; }
+@keyframes meteoroStyle1 {
+0% { opacity: 0; right: 300px; top: 100px; }
+30% { opacity: .3; }
+60% { opacity: .3; }
+100% { opacity: 0; right: 1000px; top: 600px; }
+}
+
+@keyframes meteoroStyle2 {
+0% { opacity: 0; right: 700px; top: 100px; }
+30% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; right: 1400px; top: 600px; }
+}
+
+@keyframes meteoroStyle3 {
+0% { opacity: 0; right: 300px; top: 300px; }
+30% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; right: 1000px; top: 800px; }
+}
+
+@keyframes meteoroStyle4 {
+0% { opacity: 0; right: 500px; top: 300px; }
+30% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; right: 1200px; top: 700px; }
+}
+
+@keyframes meteoroStyle5 {
+0% { opacity: 0; right: 200px; top: 300px; }
+30% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; right: 600px; top: 700px; }
+}
+
+.moon{width:100%; height:100vh; position:absolute; top:0; background:url(../img/bg_curcle.png) no-repeat 110px 70px /300px 300px, url(../img/bg_yellowcurcle.png) no-repeat 350px 200px/ 180px 180px, url(../img/bg_pinkcurcle.png) no-repeat 800px 50px/80px 80px, url(../img/bg_bluecurcle.png) no-repeat 650px 650px/ 450px 450px; transition:all 0.8s linear; animation: moon 1s ease-in-out infinite; }
+        @keyframes moon {
+            0%{top:2px}
+            50%{top:0px}
+            70%{top:0px;}
+            100%{top:2px;}
+        }
+    .wave{width:100%; height:100vh; z-index:-1; position:absolute; top:0;  background:url(../img/bg_wave_web.png) no-repeat 30px 140px / 1550px 680px; animation: moon 1s ease-in-out infinite;}
+    @keyframes moon {
+        0%{top:5px}
+        50%{top:-2px}
+        100%{top:3px;}
+    }
+
+/*dot*/
+#dot{position:fixed; right:20px; top:50%; transform:translateY(-50%); z-index:9999;}
+#dot ul li{position:relative; width:20px; height:20px; border-radius:100%; margin:8px;}
+#dot ul li a{background-color:rgba(255,255,255,0.7); width:100%; height:100%; position:absolute; top:0; left:0;  border-radius:100%; transition:transform 0.3s ease; display: block;}
+#dot ul li.active a{transform:scale(0.4);}
+#dot ul li a span{font-size:0;}
+
